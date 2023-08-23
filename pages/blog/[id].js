@@ -23,7 +23,7 @@ function SingleBlog({ blog }) {
             className="rounded"
           />
         </div>
-        <p className="text-lg mb-4">{blog.description}</p>
+        <p className="text-lg mb-4">{blog.content}</p>
       </section>
       <Footer />
     </div>
