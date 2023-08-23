@@ -51,7 +51,7 @@ export default function Home() {
             {blogItems.slice(0, 4).map((blog) => (
               <li
                 key={blog.id}
-                className=" bg-burlywood text-white  mb-4 p-4 border rounded-lg"
+                className=" bg-peru text-white  mb-4 p-4 border rounded-lg"
               >
                 <img
                   src={blog.img}

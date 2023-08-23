@@ -29,12 +29,12 @@ export default function Blog() {
             {blogItems.map((blog) => (
               <li
                 key={blog.id}
-                className=" bg-burlywood text-white text-center mb-4 p-4 border rounded-lg"
+                className=" bg-peru text-white text-center mb-4 p-4 border rounded-lg"
               >
                 <h3 className="text-lg font-bold mb-2">{blog.title}</h3>
                 <p className="text-sm mb-4">{blog.short}</p>
                 <Link href={`/blog/${blog.id}`}>
-                  <span className="text-sm bg-peru hover:bg-sienna text-white px-4 py-2 rounded">
+                  <span className="text-sm bg-sienna hover:bg-burlywood text-white px-4 py-2 rounded">
                     See Full Post
                   </span>
                 </Link>
