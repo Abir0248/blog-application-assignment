@@ -13,6 +13,7 @@ module.exports = {
         peru: "#CD853F",
         offwhite: "#FCFCFC",
         sienna: "#A0522D",
+        saddlebrown: "#8B4513",
       },
       textColor: {
         peru: "#CD853F",
