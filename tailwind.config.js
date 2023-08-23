@@ -10,7 +10,14 @@ module.exports = {
       backgroundColor: {
         burlywood: "#DEB887",
         lightgray: "#F8F8F8",
+        peru: "#CD853F",
         offwhite: "#FCFCFC",
+        sienna: "#A0522D",
+      },
+      textColor: {
+        peru: "#CD853F",
+        sienna: "#A0522D",
+        saddlebrown: "#8B4513",
       },
     },
   },

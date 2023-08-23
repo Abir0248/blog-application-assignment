@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 
 export default function About() {
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6  ">
       <Header />
 
       <section className="mt-6 mb-6">
@@ -23,7 +23,7 @@ export default function About() {
         </p>
       </section>
 
-      <section className="mt-6 mb-6 min-h-screen ">
+      <section className="mt-6 mb-6">
         <h2 className="text-2xl font-bold mb-4  text-center">
           Why Choose Our Blog?
         </h2>
