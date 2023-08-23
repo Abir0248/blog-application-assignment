@@ -1,6 +1,7 @@
 // pages/index.js
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import axios from "axios";
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -33,12 +34,12 @@ export default function Home() {
           Why Read Our Blog?
         </h2>
         <p className="mb-4">
-          Our blog offers unique insights into a range of topics. Whether you're
-          looking to stay updated with the latest trends, deepen your knowledge
-          about specific subjects, or simply find entertainment, we have
-          something for everyone. Our team of dedicated writers ensures that
-          every piece is well-researched, engaging, and insightful. Join our
-          community and discover the world through our eyes.
+          Our blog offers unique insights into a range of topics. Whether
+          you&apos;re looking to stay updated with the latest trends, deepen
+          your knowledge about specific subjects, or simply find entertainment,
+          we have something for everyone. Our team of dedicated writers ensures
+          that every piece is well-researched, engaging, and insightful. Join
+          our community and discover the world through our eyes.
         </p>
       </section>
 
@@ -51,13 +52,17 @@ export default function Home() {
             {blogItems.slice(0, 4).map((blog) => (
               <li
                 key={blog.id}
-                className=" bg-peru text-white  mb-4 p-4 border rounded-lg"
+                className="relative bg-peru text-white mb-4 p-4 border rounded-lg"
               >
-                <img
-                  src={blog.img}
-                  alt={blog.title}
-                  className="w-full h-64 object-cover rounded mb-4"
-                />
+                <div className="relative w-full h-64 mb-4">
+                  <Image
+                    src={blog.img}
+                    alt={blog.title}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded"
+                  />
+                </div>
                 <h3 className="text-lg font-bold mb-2 text-center">
                   {blog.title}
                 </h3>

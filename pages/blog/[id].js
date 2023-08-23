@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 import axios from "axios";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
@@ -13,11 +14,15 @@ function SingleBlog({ blog }) {
       <Header />
       <section className="mt-6 mb-6 min-h-screen">
         <h1 className="text-3xl font-bold mb-4">{blog.title}</h1>
-        <img
-          src={blog.img}
-          alt={blog.content}
-          className="w-full h-64 object-cover rounded mb-4"
-        />
+        <div className="relative w-full h-64 mb-4">
+          <Image
+            src={blog.img}
+            alt={blog.title}
+            layout="fill"
+            objectFit="cover"
+            className="rounded"
+          />
+        </div>
         <p className="text-lg mb-4">{blog.description}</p>
       </section>
       <Footer />
